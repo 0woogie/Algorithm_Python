@@ -10,3 +10,18 @@ for i in range(1, len(s)):
     sum *= num
 
 print(sum)
+
+'''
+#solution_2
+s = input()
+data = [int(i) for i in s]
+result = 0
+
+for x in data:
+  if result<=1 or x<=1:
+    result += x
+  else:
+    result *= x
+
+print(result)
+'''
