@@ -3,13 +3,13 @@ n = int(input())
 moves = input().split()
 x, y = 1, 1
 
-type = ['L', 'R', 'U', 'D']
+types = ['L', 'R', 'U', 'D']
 mx = [0, 0, -1, 1]
 my = [-1, 1, 0, 0]
 
 for move in moves:
-  for i in range(len(type)):
-    if move == type[i]:
+  for i in range(len(types)): # i = types.index(move)를 이용하는 방법도 있음
+    if move == types[i]:
       nx = x + mx[i]
       ny = y + my[i]
   if nx<1 or nx>n or ny<1 or ny>n:
