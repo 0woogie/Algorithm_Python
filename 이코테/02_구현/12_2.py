@@ -1,16 +1,16 @@
 #문자열 재정렬
 s = input()
 result = []
-sum = 0
+value = 0
 
-for a in s:
-  if a.isdigit():
-    sum += int(a)
+for x in s:
+  if x.isdigit():
+    value += int(x)
   else:
-    result.append(a)
+    result.append(x)
 
 result.sort()
-if sum!=0:
-  result.append(str(sum))
+if value!=0:
+  result.append(str(value))
 
 print(''.join(result))
