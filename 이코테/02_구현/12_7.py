@@ -23,12 +23,12 @@ cases = list(combinations(chicken, m))
 final_result = 10000
 for case in cases:
   case_result = 0
-  #각 집마다의 치킨 거리를 구해서 도시의 치킨 거리(case_result)를 구함
+  #각 집마다 '치킨 거리'를 구해서 '도시의 치킨 거리'(case_result)를 구함
   for hx, hy in house:
     distance = 10000
     for cx, cy in case:
       distance = min(distance, abs(hx-cx)+abs(hy-cy))
     case_result += distance
-  #도시의 치킨 거리의 최솟값(final_result)을 구함
+  #'도시의 치킨 거리'의 최솟값(final_result)을 구함
   final_result = min(final_result, case_result)
 print(final_result)
