@@ -1,3 +1,4 @@
+#키패드 누르기 - Lv.1
 def solution(numbers, hand):
     answer = ''
     dict_num = {1:(0,0), 2:(0,1), 3:(0,2),
@@ -34,5 +35,4 @@ def solution(numbers, hand):
                 else:
                     answer += 'R'
                     right_now = number
-            
     return answer
