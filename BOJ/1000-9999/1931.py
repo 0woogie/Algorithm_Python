@@ -7,7 +7,7 @@ tables = []
 for _ in range(n):
   a, b = map(int, input().split())
   tables.append((a, b))
-tables.sort(key = lambda x : (x[1], x[0]))
+tables.sort(key = lambda x : (x[1], x[0])) # 또 다른 방식으로도 정렬 가능: tables = sorted(tables, key = lambda x : (x[1], x[0]))
 
 count = 0
 endline = 0
